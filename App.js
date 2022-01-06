@@ -46,7 +46,10 @@ const App = () => {
             },
           })}
         >
-        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen 
+          name="Home" 
+          component={Home} 
+        />
         <Tab.Screen name="Friends" component={Friends} />
         <Tab.Screen name="Groups" component={Groups} />
         <Tab.Screen name="Profile" component={Profile} />
