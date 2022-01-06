@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components/native'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
+
 import Avatar from './Avatar'
-import Menu from '../screens/Menu'
 
 const Container = styled.View`
     width: 100%;
@@ -28,13 +28,13 @@ const Divider = styled.View`
     width: 0.5px;
     background: #DDDDDD;
 `
-/*const Menu = styled.View`
+const Menu = styled.View`
     flex: 1;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 42px;
-`*/
+`
 const MenuText = styled.Text`
     padding-left: 11px;
     font-weight: 500;
@@ -61,7 +61,7 @@ const ToolBar = () => {
                 </Menu>
                 <Separator />
                 <Menu>
-                    <MaterialCommunityIcons name="image-multipe" size={20} color="#4CAF50" />
+                    <MaterialCommunityIcons name="image-multiple" size={20} color="#4CAF50" />
                     <MenuText>Foto</MenuText>
                 </Menu>
                 <Separator />
