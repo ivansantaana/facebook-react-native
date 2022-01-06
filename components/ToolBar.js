@@ -5,7 +5,7 @@ import Avatar from './Avatar'
 import Menu from '../screens/Menu'
 
 const Container = styled.View`
-    width: 100px;
+    width: 100%;
     height: 92px;
 `
 const Row = styled.View`
