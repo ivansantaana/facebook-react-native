@@ -90,7 +90,52 @@ const Post = () => {
         {fakeUsers.map((user, i) => {
             return (
                 <Container key={i.toString()}>
-                    
+                    <Header>
+                        <Row>
+                            <Avatar source={user.source} />
+                            <View style={{ paddingLeft: 10 }}>
+                                <User>{user.name}</User>
+                                <Row>
+                                    <Time>{user.time}</Time>
+                                    <MaterialComunnityIcons name='circle-small' size={12} color='#747476' />
+                                    <MaterialComunnityIcons name='earth' size={10} color='#747476' />
+                                </Row>
+                            </View>
+                        </Row>
+                        <MaterialComunnityIcons name='dots-horizontal' size={20} color='#747476' />
+                    </Header>
+                    <Footer>
+                        <FooterCount>
+                            <Row>
+                                <IconCount>
+                                    <MaterialComunnityIcons name='thumb-up-outline' size={12} color='#FFFFFF' />
+                                </IconCount>
+                                <TextCount>{user.likes}</TextCount>
+                            </Row>
+                            <TextCount>{user.comments}</TextCount>
+                        </FooterCount>
+                        <Separator />
+                        <FooterMenu>
+                            <Button>
+                                <Icon>
+                                    <MaterialComunnityIcons name='thumb-up-outline' size={20} color='#424040' />
+                                </Icon>
+                                <Text>Me gusta</Text>
+                            </Button>
+                            <Button>
+                                <Icon>
+                                    <MaterialComunnityIcons name='coment-outline' size={20} color='#424040' />
+                                </Icon>
+                                <Text>Comentar</Text>
+                            </Button>
+                            <Button>
+                                <Icon>
+                                    <MaterialComunnityIcons name='share-outline' size={20} color='#424040' />
+                                </Icon>
+                                <Text>Compartir</Text>
+                            </Button>
+                        </FooterMenu>
+                    </Footer>
                 </Container>
             )
         })}
