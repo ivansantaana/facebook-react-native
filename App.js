@@ -23,7 +23,10 @@ const App = () => {
         backgroundColor= "#FFFFFF"
         barStyle="dark-content"
       />
-      <ScrollView contentContainerStyle={{flexGrow: 1}}>
+      <ScrollView 
+        contentContainerStyle={{
+          flexGrow: 1
+        }}>
         <Header />
         
       <NavigationContainer>
