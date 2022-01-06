@@ -34,8 +34,8 @@ const PersonalCardStory = styled.Image`
     width: 100%;
     height: 130px;
     border-radius: 10px;
-    border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -67,30 +67,30 @@ const UserCardPlus = styled.View`
     width: 30px;
     height: 30px;
     border-radius: 15px;
-    background: #3e86e9;
+    background: #3a86e9;
     align-items: center;
     position: absolute;
     top: 115px;
     left: 40px;
 `
+const UserOnCard = styled.View`
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+`
 const UserCardFooter = styled.View`
     position: absolute;
     width: 100%;
     height: 35%;
-    background: ${(props => props.profile ? '#FFFFFF' : 'rgba(255, 255, 255, 0)')};
     top: 130px;
     left: 0px;
-`
-const UserOnCard = styled.View`
-    width: 40px;
-    height: 40px;
-    background: #FFFFFF;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    border-radius: 20px;
-    top: 8px;
-    left: 8px;
+    background: ${(props => props.profile ? '#FFFFFF' : 'rgba(255, 255, 255, 0)')};
 `
 const Text = styled.Text`
     font-size: 12px;
@@ -100,7 +100,6 @@ const Text = styled.Text`
     text-align: center;
     color: ${(props => props.profile ? '#000000' : '#FFFFFF')};
 `
-
 
 const Story = () =>{
     return(
@@ -135,7 +134,7 @@ const Story = () =>{
                             opacity: Animations.textOpacity,
                             scale: Animations.textScale
                         }}
-                    >Crear Una Historia</Text>
+                    >Crear una historia</Text>
                     <PersonalCardIcon as={Animated.View} style={{
                         transform: [{scale: Animations.iconScale}],
                         top: Animations.iconTop,
