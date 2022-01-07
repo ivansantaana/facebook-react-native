@@ -7,8 +7,8 @@ import fakeUsers from '../data/fakeUsers';
 import MainSeparator from './MainSeparator'
 
 const Container = styled.View`
-    flex: 1;
-`
+
+` //flex: 1
 const Header = styled.View`
     flex-direction: row;
     align-items: center;
