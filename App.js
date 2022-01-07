@@ -51,13 +51,40 @@ const App = () => {
         >
         <Tab.Screen 
           name="Home" 
-          component={Home} 
-        />
-        <Tab.Screen name="Friends" component={Friends} />
-        <Tab.Screen name="Groups" component={Groups} />
-        <Tab.Screen name="Profile" component={Profile} />
-        <Tab.Screen name="Notifications" component={Notifications} />
-        <Tab.Screen name="Menu" component={Menu} />
+          component={Home}
+          options={{ 
+            title: ' ' 
+          }} />
+        <Tab.Screen 
+          name="Friends" 
+          component={Friends}         
+          options={{ 
+            title: ' ' 
+          }} />
+        <Tab.Screen 
+          name="Groups" 
+          component={Groups}           
+          options={{ 
+            title: ' ' 
+          }} />
+        <Tab.Screen 
+          name="Profile" 
+          component={Profile} 
+          options={{ 
+            title: ' ' 
+          }} />
+        <Tab.Screen 
+          name="Notifications" 
+          component={Notifications} 
+          options={{ 
+            title: ' ' 
+          }} />
+        <Tab.Screen 
+          name="Menu" 
+          component={Menu}           
+          options={{ 
+            title: ' ' 
+          }} />
         </Tab.Navigator>
       </NavigationContainer>
       </ScrollView>

@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import Avatar from './Avatar'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
+
+import Avatar from './Avatar'
+import fakeStories from '../data/fakeStories';
 
 const Container= styled.View`
     width: 100%;
@@ -17,6 +19,12 @@ const ContainerNotif= styled.View`
     margin-top: 25%;
     align-items: center;
     background: #FFFFFF;
+`
+const IconContainer= styled.View`
+    margin-left: 10%;
+    margin-top: -5%;
+    background: #2098D6;
+    border-radius: 20px;
 `
 const Text = styled.Text`
     color: #000000;
@@ -52,14 +60,40 @@ const NotificationsBox = () => {
             <Text>Anteriores</Text>
                 <ContainerNotif>
                     <Avatar source={require('../assets/12.jpg')} />
-                    <Sugerencia>Tienes una sugerencia de amistad nueva: Mar Girós.</Sugerencia>
+                    <Sugerencia>Tienes una sugerencia de amistad nueva: Iván.</Sugerencia>
                     <Date>Ayer a las 13:39</Date>
                     <Button>
                         <MaterialCommunityIcons name='dots-horizontal' size={26} color='black' />
                     </Button>
+                    <IconContainer>
+                        <MaterialCommunityIcons name='account' size={20} color='white' />
+                    </IconContainer>
+
                 </ContainerNotif>
         </Container>
+        
     );
 }
 
 export default NotificationsBox
+
+/*
+
+{fakeStories.map((story, i) => {
+                        return(
+                            <UserCard key={i.toString()}>
+                                <UserCardStory source={story.source} />
+                                <UserCardFooter profile={false}>
+                                    <Text profile={false}>{story.name}</Text>
+                                </UserCardFooter>
+                                <UserOnCard>
+                                    <Avatar 
+                                        source={story.user}
+                                        story={true}
+                                        checked={story.checked}
+                                    />
+                                </UserOnCard>
+                            </UserCard>
+                        )
+
+*/
